@@ -184,8 +184,8 @@ const Transform& Transformable::getTransform() const
     if (m_transformNeedUpdate)
     {
         float angle  = -m_rotation * 3.141592654f / 180.f;
-        float cosine = static_cast<float>(std::cos(angle));
-        float sine   = static_cast<float>(std::sin(angle));
+        float cosine = std::cos(angle);
+        float sine   = std::sin(angle);
         float sxc    = m_scale.x * cosine;
         float syc    = m_scale.y * cosine;
         float sxs    = m_scale.x * sine;
