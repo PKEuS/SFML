@@ -89,10 +89,14 @@ namespace
             if (size > 0)
             {
                 file.seekg(0, std::ios_base::beg);
-                buffer.resize(static_cast<std::size_t>(size));
+                buffer.resize(static_cast<std::size_t>(size+1));
                 file.read(&buffer[0], size);
+                buffer.back() = '\0';
             }
-            buffer.push_back('\0');
+            else
+            {
+                buffer.push_back('\0');
+            }
             return true;
         }
         else
