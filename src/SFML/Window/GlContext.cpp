@@ -261,7 +261,7 @@ namespace
                 while (*extensionString && (*extensionString != ' '))
                     extensionString++;
 
-                extensions.push_back(std::string(extension, extensionString));
+                extensions.emplace_back(extension, extensionString);
             }
             while (*extensionString++);
         }
@@ -277,7 +277,7 @@ namespace
                 {
                     const char* extensionString = reinterpret_cast<const char*>(glGetStringiFunc(GL_EXTENSIONS, i));
 
-                    extensions.push_back(extensionString);
+                    extensions.emplace_back(extensionString);
                 }
             }
         }

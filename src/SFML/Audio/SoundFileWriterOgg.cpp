@@ -87,7 +87,7 @@ bool SoundFileWriterOgg::open(const std::string& filename, unsigned int sampleRa
     vorbis_analysis_init(&m_state, &m_vorbis);
 
     // Open the file after the vorbis setup is ok
-    m_file.open(filename.c_str(), std::ios::binary);
+    m_file.open(filename, std::ios::binary);
     if (!m_file)
     {
         err() << "Failed to write ogg/vorbis file \"" << filename << "\" (cannot open file)" << std::endl;

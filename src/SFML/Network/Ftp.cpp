@@ -126,7 +126,7 @@ Ftp::Response(response)
         std::string::size_type lastPos = 0;
         for (std::string::size_type pos = data.find("\r\n"); pos != std::string::npos; pos = data.find("\r\n", lastPos))
         {
-            m_listing.push_back(data.substr(lastPos, pos - lastPos));
+            m_listing.emplace_back(data.substr(lastPos, pos - lastPos));
             lastPos = pos + 2;
         }
     }
@@ -298,7 +298,8 @@ Ftp::Response Ftp::download(const std::string& remoteFile, const std::string& lo
                 path += "/";
 
             // Create the file and truncate it if necessary
-            std::ofstream file((path + filename).c_str(), std::ios_base::binary | std::ios_base::trunc);
+			std::string filepath = path + filename;
+            std::ofstream file(filepath, std::ios_base::binary | std::ios_base::trunc);
             if (!file)
                 return Response(Response::InvalidFile);
 
@@ -313,7 +314,7 @@ Ftp::Response Ftp::download(const std::string& remoteFile, const std::string& lo
 
             // If the download was unsuccessful, delete the partial file
             if (!response.isOk())
-                std::remove((path + filename).c_str());
+                std::remove(filepath.c_str());
         }
     }
 
@@ -325,7 +326,7 @@ Ftp::Response Ftp::download(const std::string& remoteFile, const std::string& lo
 Ftp::Response Ftp::upload(const std::string& localFile, const std::string& remotePath, TransferMode mode, bool append)
 {
     // Get the contents of the file to send
-    std::ifstream file(localFile.c_str(), std::ios_base::binary);
+    std::ifstream file(localFile, std::ios_base::binary);
     if (!file)
         return Response(Response::InvalidFile);
 

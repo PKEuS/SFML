@@ -81,7 +81,7 @@ namespace
     // Read the contents of a file into an array of char
     bool getFileContents(const std::string& filename, std::vector<char>& buffer)
     {
-        std::ifstream file(filename.c_str(), std::ios_base::binary);
+        std::ifstream file(filename, std::ios_base::binary);
         if (file)
         {
             file.seekg(0, std::ios_base::end);
@@ -1004,7 +1004,7 @@ int Shader::getUniformLocation(const std::string& name)
     {
         // Not in cache, request the location from OpenGL
         int location = GLEXT_glGetUniformLocation(castToGlHandle(m_shaderProgram), name.c_str());
-        m_uniforms.insert(std::make_pair(name, location));
+        m_uniforms.emplace(name, location);
 
         if (location == -1)
             err() << "Uniform \"" << name << "\" not found in shader" << std::endl;

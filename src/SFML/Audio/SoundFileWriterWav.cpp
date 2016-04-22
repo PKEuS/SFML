@@ -102,7 +102,7 @@ SoundFileWriterWav::~SoundFileWriterWav()
 bool SoundFileWriterWav::open(const std::string& filename, unsigned int sampleRate, unsigned int channelCount)
 {
     // Open the file
-    m_file.open(filename.c_str(), std::ios::binary);
+    m_file.open(filename, std::ios::binary);
     if (!m_file)
     {
         err() << "Failed to open WAV sound file \"" << filename << "\" for writing" << std::endl;
