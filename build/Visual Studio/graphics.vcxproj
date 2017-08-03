@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-DLL|Win32">
+      <Configuration>Debug-DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-DLL|x64">
+      <Configuration>Debug-DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Lib|Win32">
+      <Configuration>Debug-Lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Lib|x64">
+      <Configuration>Debug-Lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-DLL|Win32">
+      <Configuration>Release-DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-DLL|x64">
+      <Configuration>Release-DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Lib|Win32">
+      <Configuration>Release-Lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Lib|x64">
+      <Configuration>Release-Lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE0BC7AB-E667-4095-A23C-C06C552B810B}</ProjectGuid>
+    <RootNamespace>graphics</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|Win32'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-s</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|x64'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-s-64</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|Win32'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-s-d</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|x64'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-s-d-64</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|Win32'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-d</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+    <TargetExt>-2.dll</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|x64'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-d-64</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+    <TargetExt>-2.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|Win32'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+    <TargetExt>-2.dll</TargetExt>
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|x64'">
+    <IntDir>Temp/$(ProjectName)/$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName)-$(ProjectName)-64</TargetName>
+    <SourcePath>../../src/SFML/Graphics/;$(SourcePath)</SourcePath>
+    <OutDir>../../lib/Visual Studio/</OutDir>
+    <TargetExt>-2.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc-universal\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <Version>2.0</Version>
+      <SubSystem>Windows</SubSystem>
+      <SetChecksum>true</SetChecksum>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc-universal\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <SetChecksum>true</SetChecksum>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc-universal\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <Version>2.0</Version>
+      <StackReserveSize>
+      </StackReserveSize>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc-universal\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <Version>2.0</Version>
+      <StackReserveSize>
+      </StackReserveSize>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../extlibs/headers/freetype2;../../extlibs/headers/stb_image;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\extlibs\libs-msvc\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="system.vcxproj">
+      <Project>{f03b8a68-deca-4d2e-bc48-9da41792e25c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="window.vcxproj">
+      <Project>{ce22d517-9276-4db2-a8af-9eb39fc0c48a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\SFML\Graphics\BlendMode.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\CircleShape.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Color.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\ConvexShape.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Font.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\GLCheck.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\GLExtensions.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\GLLoader.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Glsl.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Image.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\ImageLoader.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RectangleShape.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderStates.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderTarget.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderTextureImpl.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderTextureImplDefault.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderTextureImplFBO.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\RenderWindow.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Shader.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Shape.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Sprite.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Text.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\TextureSaver.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Transform.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Transformable.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\Vertex.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\VertexArray.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\src\SFML\Graphics\View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\VertexBuffer.hpp" />
+    <ClInclude Include="..\..\include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\GLCheck.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\GLExtensions.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\GLLoader.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\ImageLoader.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\RenderTextureImpl.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\RenderTextureImplDefault.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\RenderTextureImplFBO.hpp" />
+    <ClInclude Include="..\..\src\SFML\Graphics\TextureSaver.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\SFML\Graphics\Glsl.inl" />
+    <None Include="..\..\include\SFML\Graphics\Rect.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
