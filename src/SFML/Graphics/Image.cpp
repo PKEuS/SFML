@@ -131,6 +131,10 @@ bool Image::loadFromFile(const std::string& filename)
 
     #endif
 }
+bool Image::loadFromFile(const char* filename)
+{
+	return loadFromFile(std::string(filename));
+}
 
 
 ////////////////////////////////////////////////////////////

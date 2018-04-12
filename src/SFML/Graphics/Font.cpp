@@ -200,6 +200,10 @@ bool Font::loadFromFile(const std::string& filename)
 
     #endif
 }
+bool Font::loadFromFile(const char* filename)
+{
+	return loadFromFile(std::string(filename));
+}
 
 
 ////////////////////////////////////////////////////////////

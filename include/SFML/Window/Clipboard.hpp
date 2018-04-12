@@ -70,6 +70,10 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     static void setString(const String& text);
+	static void setString(const char* text);
+	static void setString(const wchar_t* text);
+	static void setString(const std::string& text);
+	static void setString(const std::wstring& text);
 };
 
 } // namespace sf

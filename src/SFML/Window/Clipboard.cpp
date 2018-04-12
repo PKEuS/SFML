@@ -44,5 +44,21 @@ void Clipboard::setString(const String& text)
 {
     return priv::ClipboardImpl::setString(text);
 }
+void Clipboard::setString(const char* text)
+{
+	return priv::ClipboardImpl::setString(text);
+}
+void Clipboard::setString(const wchar_t* text)
+{
+	return priv::ClipboardImpl::setString(text);
+}
+void Clipboard::setString(const std::string& text)
+{
+	return priv::ClipboardImpl::setString(text);
+}
+void Clipboard::setString(const std::wstring& text)
+{
+	return priv::ClipboardImpl::setString(text);
+}
 
 } // namespace sf

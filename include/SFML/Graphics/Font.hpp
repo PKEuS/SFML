@@ -107,6 +107,7 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     bool loadFromFile(const std::string& filename);
+    bool loadFromFile(const char* filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the font from a file in memory

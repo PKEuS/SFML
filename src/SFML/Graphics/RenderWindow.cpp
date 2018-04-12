@@ -48,6 +48,26 @@ m_defaultFrameBuffer(0)
     // Don't call the base class constructor because it contains virtual function calls
     Window::create(mode, title, style, settings);
 }
+RenderWindow::RenderWindow(VideoMode mode, const char* title, Uint32 style, const ContextSettings& settings)
+{
+    // Don't call the base class constructor because it contains virtual function calls
+    create(mode, title, style, settings);
+}
+RenderWindow::RenderWindow(VideoMode mode, const wchar_t* title, Uint32 style, const ContextSettings& settings)
+{
+    // Don't call the base class constructor because it contains virtual function calls
+    create(mode, title, style, settings);
+}
+RenderWindow::RenderWindow(VideoMode mode, const std::string& title, Uint32 style, const ContextSettings& settings)
+{
+    // Don't call the base class constructor because it contains virtual function calls
+    create(mode, title, style, settings);
+}
+RenderWindow::RenderWindow(VideoMode mode, const std::wstring& title, Uint32 style, const ContextSettings& settings)
+{
+    // Don't call the base class constructor because it contains virtual function calls
+    create(mode, title, style, settings);
+}
 
 
 ////////////////////////////////////////////////////////////

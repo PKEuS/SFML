@@ -220,6 +220,11 @@ bool Texture::loadFromFile(const std::string& filename, const IntRect& area)
     Image image;
     return image.loadFromFile(filename) && loadFromImage(image, area);
 }
+bool Texture::loadFromFile(const char* filename, const IntRect& area)
+{
+    Image image;
+    return image.loadFromFile(filename) && loadFromImage(image, area);
+}
 
 
 ////////////////////////////////////////////////////////////

@@ -114,6 +114,22 @@ m_fontTextureId      (0)
 {
 
 }
+Text::Text(const char* string, const Font& font, unsigned int characterSize) :
+	Text(sf::String(string), font, characterSize)
+{
+}
+Text::Text(const wchar_t* string, const Font& font, unsigned int characterSize) :
+	Text(sf::String(string), font, characterSize)
+{
+}
+Text::Text(const std::string& string, const Font& font, unsigned int characterSize) :
+	Text(sf::String(string), font, characterSize)
+{
+}
+Text::Text(const std::wstring& string, const Font& font, unsigned int characterSize) :
+	Text(sf::String(string), font, characterSize)
+{
+}
 
 
 ////////////////////////////////////////////////////////////
@@ -124,6 +140,22 @@ void Text::setString(const String& string)
         m_string = string;
         m_geometryNeedUpdate = true;
     }
+}
+void Text::setString(const char* string)
+{
+	setString(sf::String(string));
+}
+void Text::setString(const wchar_t* string)
+{
+	setString(sf::String(string));
+}
+void Text::setString(const std::string& string)
+{
+	setString(sf::String(string));
+}
+void Text::setString(const std::wstring& string)
+{
+	setString(sf::String(string));
 }
 
 

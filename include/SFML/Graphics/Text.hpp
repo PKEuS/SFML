@@ -86,6 +86,10 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     Text(const String& string, const Font& font, unsigned int characterSize = 30);
+	Text(const const char* string, const Font& font, unsigned int characterSize = 30);
+	Text(const const wchar_t* string, const Font& font, unsigned int characterSize = 30);
+	Text(const std::string& string, const Font& font, unsigned int characterSize = 30);
+	Text(const std::wstring& string, const Font& font, unsigned int characterSize = 30);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the text's string
@@ -107,6 +111,10 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     void setString(const String& string);
+	void setString(const char* string);
+	void setString(const wchar_t* string);
+	void setString(const std::string& string);
+	void setString(const std::wstring& string);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the text's font
