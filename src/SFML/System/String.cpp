@@ -131,6 +131,10 @@ m_string(copy.m_string)
 {
 }
 
+String::String(String&& copy) :
+    m_string(std::move(copy.m_string))
+{
+}
 
 ////////////////////////////////////////////////////////////
 String::operator std::string() const
@@ -213,6 +217,11 @@ std::basic_string<Uint32> String::toUtf32() const
 String& String::operator =(const String& right)
 {
     m_string = right.m_string;
+    return *this;
+}
+String& String::operator =(String&& right)
+{
+    m_string = std::move(right.m_string);
     return *this;
 }
 

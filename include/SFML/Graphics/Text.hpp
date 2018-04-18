@@ -86,8 +86,8 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     Text(const String& string, const Font& font, unsigned int characterSize = 30);
-	Text(const const char* string, const Font& font, unsigned int characterSize = 30);
-	Text(const const wchar_t* string, const Font& font, unsigned int characterSize = 30);
+	Text(const char* string, const Font& font, unsigned int characterSize = 30);
+	Text(const wchar_t* string, const Font& font, unsigned int characterSize = 30);
 	Text(const std::string& string, const Font& font, unsigned int characterSize = 30);
 	Text(const std::wstring& string, const Font& font, unsigned int characterSize = 30);
 
