@@ -455,17 +455,13 @@ void Texture::update(const Texture& texture, unsigned int x, unsigned int y)
 
 #ifndef SFML_OPENGL_ES
 
-    {
-        TransientContextLock lock;
+    TransientContextLock lock;
 
-        // Make sure that extensions are initialized
-        priv::ensureExtensionsInit();
-    }
+    // Make sure that extensions are initialized
+    priv::ensureExtensionsInit();
 
     if (GLEXT_framebuffer_object && GLEXT_framebuffer_blit)
     {
-        TransientContextLock lock;
-
         // Save the current bindings so we can restore them after we are done
         GLint readFramebuffer = 0;
         GLint drawFramebuffer = 0;
