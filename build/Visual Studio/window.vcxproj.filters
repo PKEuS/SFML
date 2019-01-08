@@ -23,9 +23,6 @@
     <ClCompile Include="..\..\src\SFML\Window\Win32\WglContext.cpp">
       <Filter>Quelldateien\Win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\SFML\Window\Win32\WglExtensions.cpp">
-      <Filter>Quelldateien\Win32</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\SFML\Window\Win32\WindowImplWin32.cpp">
       <Filter>Quelldateien\Win32</Filter>
     </ClCompile>
@@ -89,15 +86,21 @@
     <ClCompile Include="..\..\src\SFML\Window\Win32\ClipboardImpl.cpp">
       <Filter>Quelldateien\Win32</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\SFML\Window\WindowBase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SFML\Window\Win32\VulkanImplWin32.cpp">
+      <Filter>Quelldateien\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SFML\Window\Vulkan.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\SFML\Window\Win32\SensorImpl.hpp">
       <Filter>Headerdateien\Win32</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\SFML\Window\Win32\WglContext.hpp">
-      <Filter>Headerdateien\Win32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\SFML\Window\Win32\WglExtensions.hpp">
       <Filter>Headerdateien\Win32</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\SFML\Window\Win32\WindowImplWin32.hpp">
@@ -191,6 +194,15 @@
       <Filter>Headerdateien\Win32</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\SFML\Window\Clipboard.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\SFML\Window\WindowBase.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SFML\Window\Win32\VulkanImplWin32.hpp">
+      <Filter>Headerdateien\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\SFML\Window\Vulkan.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

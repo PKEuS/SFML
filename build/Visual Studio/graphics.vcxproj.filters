@@ -71,9 +71,6 @@
     <ClCompile Include="..\..\src\SFML\Graphics\GLExtensions.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\SFML\Graphics\GLLoader.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\SFML\Graphics\Image.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -116,9 +113,6 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\SFML\Graphics\GLExtensions.hpp">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\SFML\Graphics\GLLoader.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\SFML\Graphics\ImageLoader.hpp">

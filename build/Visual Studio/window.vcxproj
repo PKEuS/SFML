@@ -37,60 +37,60 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CE22D517-9276-4DB2-A8AF-9EB39FC0C48A}</ProjectGuid>
     <RootNamespace>window</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -179,7 +179,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
@@ -201,7 +201,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <AdditionalOptions>/Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
@@ -223,7 +223,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
@@ -245,7 +245,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <AdditionalOptions>/Zc:inline /Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
@@ -266,7 +266,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
@@ -302,7 +302,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
@@ -334,7 +334,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -364,7 +364,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../extlibs/headers/vulkan;../../extlibs/headers/glad/include;../../extlibs/headers;../../src;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -408,16 +408,18 @@
     <ClCompile Include="..\..\src\SFML\Window\SensorManager.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Touch.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\VideoMode.cpp" />
+    <ClCompile Include="..\..\src\SFML\Window\Vulkan.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\ClipboardImpl.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\CursorImpl.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\InputImpl.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\JoystickImpl.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\SensorImpl.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\VideoModeImpl.cpp" />
+    <ClCompile Include="..\..\src\SFML\Window\Win32\VulkanImplWin32.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\WglContext.cpp" />
-    <ClCompile Include="..\..\src\SFML\Window\Win32\WglExtensions.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Win32\WindowImplWin32.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\Window.cpp" />
+    <ClCompile Include="..\..\src\SFML\Window\WindowBase.cpp" />
     <ClCompile Include="..\..\src\SFML\Window\WindowImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -434,7 +436,9 @@
     <ClInclude Include="..\..\include\SFML\Window\Sensor.hpp" />
     <ClInclude Include="..\..\include\SFML\Window\Touch.hpp" />
     <ClInclude Include="..\..\include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="..\..\include\SFML\Window\Vulkan.hpp" />
     <ClInclude Include="..\..\include\SFML\Window\Window.hpp" />
+    <ClInclude Include="..\..\include\SFML\Window\WindowBase.hpp" />
     <ClInclude Include="..\..\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="..\..\include\SFML\Window\WindowStyle.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\ClipboardImpl.hpp" />
@@ -451,8 +455,8 @@
     <ClInclude Include="..\..\src\SFML\Window\Win32\InputImpl.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\Win32\JoystickImpl.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\Win32\SensorImpl.hpp" />
+    <ClInclude Include="..\..\src\SFML\Window\Win32\VulkanImplWin32.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\Win32\WglContext.hpp" />
-    <ClInclude Include="..\..\src\SFML\Window\Win32\WglExtensions.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\Win32\WindowImplWin32.hpp" />
     <ClInclude Include="..\..\src\SFML\Window\WindowImpl.hpp" />
   </ItemGroup>
